@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #020e5d, #0580aa, #020850);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #00ffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff00ff;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#hero {
+  background: url('https://source.unsplash.com/1600x900/?technology,abstract') center/cover no-repeat;
+  padding: 6rem 2rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
